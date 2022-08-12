@@ -1,11 +1,19 @@
 package com.example.backend.model;
 
+import lombok.*;
+
+import javax.persistence.*;
 import java.io.Serializable;
 
-
+@Entity
+@Getter
+@Setter
+@Table(name = "userdb")
 public class User implements Serializable {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(unique = true)
     private String username;
     private String email;
     private String password;
