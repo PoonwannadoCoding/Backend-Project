@@ -10,5 +10,5 @@ import lombok.Setter;
 public class ResponseDTO {
 
     private boolean success;
-    private boolean message;
+    private String message;
 }
