@@ -23,11 +23,7 @@ public class UserConfig {
                     "ggez@gmail.com",
                     "123456"
             );
-
-            //repository.saveAll(List.of(poon));
-//            repository.save(poon);
-
-            repository.saveAll(List.of(poon,yeet));
+            //repository.saveAll(List.of(poon,yeet));
         };
     }
 }
